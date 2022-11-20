@@ -1,0 +1,116 @@
+:root {
+    --main-color:#fff;
+    --second-color: #ffbf00;
+    --dark-color: #202020
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: cairo;
+    background-color: #202020;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.info {
+    position: relative;
+    width: 60%;
+    color: var(--second-color);
+    margin: 30px 60px 0 60px;
+    padding: 10px 20px 30px 20px;
+    font-size: 24px;
+    background-color: #19191979;
+    border-radius: 15px;
+    box-shadow: 5px 5px 20px rgb(4, 4, 4),  -5px -5px 20px rgba(69, 69, 69, 0.763);
+ 
+
+}
+.info h5{
+    color: var(--main-color);
+}
+.info::after {
+    position: absolute;
+    content: "";
+    bottom: 15px;
+    width: calc(100% - 45px);
+    height: 2px;
+    background-color: var(--second-color);
+}
+form {
+    width: 60%;
+    margin: 30px;
+    padding: 20px;
+    background-color: #19191979;
+    border-radius: 15px;
+    box-shadow: 5px 5px 20px rgb(4, 4, 4),  -5px -5px 20px rgba(69, 69, 69, 0.763);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start
+}
+ 
+form select,
+form input {
+    width: 100%;
+    margin: 10px 0;
+    height: 50px;
+    padding: 0 10px;
+    font-family: cairo;
+    font-size: 18px;
+    color: var(--second-color);
+    background-color: var(--dark-color);
+    border: 2px solid var(--second-color);
+    border-radius: 10px;
+    outline: none;
+    
+}
+form input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+::-webkit-inner-spin-button,
+::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+}
+
+
+form select:focus,
+form input:focus{
+    background-color: #00000079;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.763) ;
+    
+
+}
+
+
+form input[type="checkbox"]{
+    width: 20px;
+    height: fit-content;
+    margin-left: 10px;
+    cursor: pointer;
+}
+form label{
+    height: fit-content;
+    color: var(--second-color);
+}
+
+form .submit {
+    background-color: #ffbf0043;
+    color: var(--dark-color);
+    font-weight: bold;
+    font-size: 20px;
+    outline: none;
+    border: none;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.763);
+
+}
+
+form .active {
+    background-color: var(--second-color);
+}
+form .active:hover {
+    background-color: #ffbf00d5;
+    cursor: pointer;
+}
